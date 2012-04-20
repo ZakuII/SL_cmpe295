@@ -1,9 +1,14 @@
-<?php
+<?php defined('SYSPATH') or die('No direct script access.');
+
 class Controller_Test extends Controller {
 
 	public function action_index()
 	{
-		$rendered_view = View::factory('test/index')->render();
+		$user = ORM::factory('user',1);
+		$rendered_view = View::factory('test/index')
+			->bind('name' , $user_name);
+		
+		$user_name = $user->name;
 		$this->response->body($rendered_view);
 	}
 
