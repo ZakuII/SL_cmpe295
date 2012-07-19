@@ -8,7 +8,7 @@ class Controller_Test extends Controller {
 		$rendered_view = View::factory('test/index')
 			->bind('name' , $user_name);
 		
-		$user_name = $user->name;
+		$user_name = $user->get_name();
 		$this->response->body($rendered_view);
 	}
 
