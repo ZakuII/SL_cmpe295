@@ -2,4 +2,4 @@
 
 This is the current development version of [Kohana](http://kohanaframework.org/).
 
-For the most current release, see the 3.1/master branch.
+For the most current release, see the 3.1/master branch!
