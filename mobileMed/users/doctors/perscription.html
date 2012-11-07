@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  
+  <!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>  -->
+  
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>	
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>  		
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+	
+  
+  <script src="perscription.js"></script>
+  <link rel="stylesheet" href="perscription.css" />
+
+  </head>
+
+<body>
+
+	<div data-role="page" id="perscription">
+	
+		<div data-role="header" data-position="inline"> 
+			<a href="#" data-rel="back" data-icon="back" data-direction="reverse" class="ui-btn-left jqm-home">Back</a>
+			<h1>Perscription</h1>
+		</div>
+
+		<div data-role="content" id="PerscriptTab">
+			<div data-role="controlgroup" data-type="horizontal">
+				<input type="button" id="PerscriptTabMap" value="Show Map" data-inline="true"/> 
+			</div>
+		</div>
+		
+		<div data-role="content" id="map_canvas"></div>
+		
+		<div data-role="content" id="PerscriptForm">
+			<h3 align="center">Patient Perscription Form</h3>
+			<div id="show"></div>
+			
+			<form id="perscriptionForm">
+				
+				<ul data-role="listview" data-inset="true">
+					<li data-role="list-divider">Patient Information</li>
+					<li data-role="fieldcontain">
+						<label for="mxFname">Patient First Name</label>
+						<input type="text" name="mxFname" id="mxFname" value=""  />
+					</li>
+					<li data-role="fieldcontain">
+						<label for="mxLname">Patient Last Name</label>
+						<input type="text" name="mxLname" id="mxLname" value=""  />
+					</li>
+					
+					<li data-role="fieldcontain">
+						<label for="mxPPid">Patient ID</label>
+						<input type="text" name="mxPPid" id="mxPPid" value=""  />
+					</li>
+					
+					<li data-role="fieldcontain">
+						<label for="mxReason">Visit Reason</label>
+						<input type="text" name="mxReason" id="mxReason" value=""  />
+					</li>
+					
+					<li data-role="fieldcontain">
+						<label for="mxAlleg">Allergies</label>
+						<input type="text" name="mxAlleg" id="mxAlleg" value=""  />
+					</li>
+					
+					<li data-role="list-divider">Insurance Information</li>
+					<li data-role="fieldcontain">
+						<label for="insurePlace">Insurance Provider</label>
+						<input type="text" name="insurePlace" id="insurePlace" value=""  />
+					</li>
+					
+					<li data-role="fieldcontain">
+						<label for="insureID">Policy Holder ID</label>
+						<input type="text" name="insureID" id="insureID" value=""  />
+					</li>
+					
+					<li data-role="list-divider">Insitution Information</li>
+					<li data-role="fieldcontain">
+						<label for="mxplace">Insititution</label>
+						<input type="text" name="mxplace" id="mxplace" value="SJSU CMPE295 Hospital"  />
+					</li>
+					
+					<li data-role="fieldcontain">
+						<label for="mxplaceId">Insititution ID</label>
+						<input type="text" name="mxplaceId" id="mxplaceId" value="818289483"  />
+					</li>
+					
+					<li data-role="list-divider">Pharmacy / [NOTE] Use Map for Efficiency</li>
+					<li data-role="fieldcontain">
+						<label for="pharmacy">Pharmacy</label>
+						<textarea name="pharmacy" id="pharmacy"></textarea>
+					</li>
+					
+					<li data-role="fieldcontain">
+						<label for="pharmacyLoc">Pharmacy Location</label>
+						<textarea name="pharmacyLoc" id="pharmacyLoc"></textarea>
+					</li>
+					
+					<li data-role="list-divider">Perscription</li>
+					<li data-role="fieldcontain">
+						<label for="medicine">Perscription</label>
+						<input type="text" name="medicine" id="medicine" value=""  />
+						
+					</li>
+
+					<li data-role="fieldcontain">
+						<label for="medAmnt">Amount</label>
+						<input type="text" name="medAmnt" id="medAmnt" value=""  />
+						
+					</li>
+			
+					
+					<li data-role="fieldcontain">						
+						
+						<label for="mxD1">Take</label>
+						<input type=number name="mxD1" id="mxD1" />						
+
+						<label for="mxD2" >Every (in Hours)</label>
+						<input type=number name="mxD2" id="mxD2" />
+						
+						<label for="mxD3" >For (in Days)</label>
+						<input type=number name="mxD3" id="mxD3" />						
+
+					</li>
+					
+					<li data-role="fieldcontain">
+						<label for="mxRefill">Refill Amount</label>
+						<input type="number" name="mxRefill" id="mxRefill" value=""  />
+						
+					</li>
+					
+					
+					<li data-role="fieldcontain">
+						<label for="Directions">Additional Directions</label>
+						<textarea name="Directions" id="Directions"></textarea>
+					</li>
+					
+					
+					<li data-role="list-divider"></li>
+					<li data-role="controlgroup" data-type="horizontal">
+						<input type="reset" value="Clear" data-inline="true"/>
+						<input type="button" id="PerscriptSubmit" value="Submit" data-inline="true"/> 
+					</li>
+					
+				</ul>
+			</form>
+			
+			</div>
+			
+			</form>
+		</div>
+				
+		</div>
+
+	</div>
+
+
+</body>
+</html>

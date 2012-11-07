@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  
+  <script src="pqedit.js"></script>
+  <script src="pqedit2.js"></script>
+  <script src="pqedit3.js"></script>
+  <script src="configPerson.js"></script>
+  <script src="../../log.js"></script>
+</head>
+
+<body>
+	
+<div data-role="page" id="PQedit">
+
+	<div data-role="header">
+		<h1>Social Medical Questions</h1>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+	<div id="pqEdit_a">
+		<ul data-role="listview" data-inset="true">	
+			<li data-role="list-divider">New Questions</li>
+			<li><a href="newQuestion.html">Create New Question</a></li>
+		</ul>
+	</div>	
+	<div id="pqEdit_b"></div>
+	<div>
+	<ul data-role="listview" data-inset="true">	
+		<li data-role="list-divider"></li>
+		<li><a href="../../question.html">Back</a></li>
+		<li id="pqEditSave" data-icon="false"><a>Save</a></li>
+		<!--<input type="button" data-inline="true" value="Back" id="pqEditBack"/>
+		<input type="button" data-inline="true" value="Save" id="pqEditSave"/>
+		<input type="button" data-inline="true" value="Test" id="pqEditTest"/>-->
+		</li>
+	</ul>
+	</div>
+	</div><!-- /content --> 
+ 	
+	
+	<div data-role="footer"><h5>Footer</h5></div><!-- /footer --> 
+ 
+	</div><!-- /page1 -->
+	
+
+</body>
+</html>

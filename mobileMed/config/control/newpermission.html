@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  
+  <script src="permission.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="newPermission">
+
+
+	<div data-role="header">
+		<h1>Configure Permissions</h1>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+		<h3 align="center">New Permission</h3>
+		<form id="newPermForm">
+			<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider">Categories</li>
+				<li data-role="fieldcontain">
+					<label for="newPermName" id="newPermNameLabel"><strong>New Doctor Type:</strong></label>
+					<input type="text" name="newPermName" id="newPermName" value=""  />
+				</li>
+				<li data-role="fieldcontain">
+					<label for="toggle_pq"><strong>Person Question:</strong></label>
+					<select name="toggle_pq" id="toggle_pq" data-role="slider">
+						<option value="1">Allow</option>
+						<option value="0">Hide</option>
+					</select> 
+				</li>
+				<li data-role="fieldcontain">
+					<label for="toggle_mq"><strong>Medical Question:</strong></label>
+					<select name="toggle_mq" id="toggle_mq" data-role="slider">
+						<option value="1">Allow</option>
+						<option value="0">Hide</option>
+					</select> 
+				</li>
+				<li data-role="fieldcontain">
+					<label for="toggle_sq"><strong>Social Question:</strong></label>
+					<select name="toggle_sq" id="toggle_sq" data-role="slider">
+						<option value="1">Allow</option>
+						<option value="0">Hide</option>
+					</select> 
+				</li>
+				<li data-role="fieldcontain">
+					<label for="toggle_eq"><strong>Environmental Question:</strong></label>
+					<select name="toggle_eq" id="toggle_eq" data-role="slider">
+						<option value="1">Allow</option>
+						<option value="0">Hide</option>
+					</select> 
+				</li>
+				<li data-role="fieldcontain">
+					<label for="toggle_fq"><strong>Family Question:</strong></label>
+					<select name="toggle_fq" id="toggle_fq" data-role="slider">
+						<option value="1">Allow</option>
+						<option value="0">Hide</option>
+					</select> 
+				</li>
+				<li data-role="fieldcontain">
+					<label for="toggle_xq"><strong>Miscellanous Question:</strong></label>
+					<select name="toggle_xq" id="toggle_xq" data-role="slider">
+						<option value="1">Allow</option>
+						<option value="0">Hide</option>
+					</select> 
+				</li>
+				<li data-role="list-divider">Options</li>
+				<li id="newPermSave" data-icon="false"><a>Save</a></li>
+				<li><a href="permission.html">Back</a></li>					
+			</ul>
+		</form>
+	
+	</div><!-- /content --> 
+ 
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

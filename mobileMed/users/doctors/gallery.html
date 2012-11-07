@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+<link href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" rel="stylesheet" />
+<link href="../../assets/photoswipe.css" type="text/css" rel="stylesheet" />
+  
+<script type="text/javascript" src="../../assets/klass.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+<script type="text/javascript" src="../../assets/code.photoswipe.jquery-3.0.5.min.js"></script>
+<script type="text/javascript">
+  
+//(function(window, $, PhotoSwipe){
+//(function(window, Util, PhotoSwipe){
+	
+	/*$(document).ready(function(){
+		$("#gallery a").photoSwipe(
+		{
+		enableMouseWheel: false,
+		enableKeyboard: false,
+		jQueryMobile: true,
+		captionAndToolbarShowEmptyCaptions: true
+		});
+	});*/
+	(function(window, Util, PhotoSwipe){
+	//document.addEventListener('DOMContentLoaded', function(){			
+	$(document).ready(function(){
+				var options = {
+						getToolbar: function(){
+							//return '<div class="ps-toolbar-close" style="padding-top: 12px;">Close</div><div class="ps-toolbar-play" style="padding-top: 12px;">Play</div><div class="ps-toolbar-previous" style="padding-top: 12px;">Previous</div><div class="ps-toolbar-next" style="padding-top: 12px;">Next</div>';							
+							return '<div class="ps-toolbar-close" style="padding-top: 12px;">Close</div><div class="ps-toolbar-previous" style="padding-top: 12px;">Previous</div><div class="ps-toolbar-next" style="padding-top: 12px;">Next</div>';	
+						}
+					},
+					instance = PhotoSwipe.attach( window.document.querySelectorAll('#gallery a'), options );
+			}, false);
+	}(window, window.jQuery, window.Code.PhotoSwipe));
+</script>
+
+</head>
+  
+<body>
+  
+  	<div data-role="page" class="type-interior" id="procShow">
+
+		
+
+	<div data-role="content">
+		<div id="gallery">
+						
+			<a href="images/full/002.jpg" rel="external"><img src="images/thumb/002.jpg" alt="Image 002" /></a>
+			<a href="images/full/003.jpg" rel="external"><img src="images/thumb/003.jpg" alt="Image 003" /></a>
+			<a href="images/full/004.jpg" rel="external"><img src="images/thumb/004.jpg" alt="Image 004" /></a>
+			
+		</div>
+
+	</div><!-- /content -->
+	
+	</div><!-- /page -->
+  
+</body>
+  
+</html>

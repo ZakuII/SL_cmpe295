@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">  	  
+  <meta http-equiv="cleartype" content="on">
+  <meta name="MobileOptimized" content="320" />
+    
+  <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>-->
+  
+  <!--<link rel="stylesheet" href="../assets/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="../assets/jquery-1.7.1.min.js"></script>
+  <script src="../assets/jquery.mobile-1.1.1/jquery.mobile-1.1.1.min.js"></script>-->
+  
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>	
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>  
+  
+  <script type="text/javascript" src="../assets/jquery-ui-1.8.23.custom.min.js"></script>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>-->
+  
+  <link href="../assets/photoswipe.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="../assets/klass.min.js"></script>
+  <script type="text/javascript" src="../assets/code.photoswipe.jquery-3.0.5.min.js"></script>
+  
+  <script src="doctor.js"></script>
+  <script src="doctors/Dpatient.js"></script>
+  <script src="form/views/show2.js"></script>
+  
+  <link rel="stylesheet" href="form/nav.css" />
+ 
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>  
+  <script src="doctors/perscription.js"></script>
+  <link rel="stylesheet" href="doctors/perscription.css" /> 
+  <script src="doctors/contact.js"></script>
+  <link rel="stylesheet" href="doctors/message.css" />  
+  <script src="doctors/scheduleProc.js"></script>
+  <link rel="stylesheet" href="doctors/viewProc.css" />
+  <script src="doctors/viewProc.js"></script> 
+  
+</head>
+
+<body>
+
+<div data-role="page" id="doctor">
+
+
+	<div data-role="header">
+		<h1>Doctor</h1>
+		<a id="logout" data-icon="gear" class="ui-btn-right">Log Out</a>
+	</div><!-- /head -->   
+	
+	<div data-role="content" id="doctorMenu">
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="doctorPatientBack" value="Back To Main" data-inline="true"/> 
+			<input type="button" id="doctorPatientToggle" value="Toggle Patient" data-inline="true"/>
+		</div>
+		
+		<div data-role="controlgroup" data-type="horizontal">
+			<!--<span>Sort By: </span>-->
+			<input type="button" id="sortFname" value="Firstname" data-inline="true"/> 
+			<input type="button" id="sortLname" value="Lastname" data-inline="true"/>
+			<input type="button" id="sortTime" value="Time" data-inline="true"/>
+		</div>
+	
+	</div><!-- /content --> 
+  
+	<div data-role="content" id="doctorMain">
+		<div>		
+		<img style="display: block; margin-left: auto; margin-right: auto" src="../assets/doctor.jpg" />
+		<h3 style="text-align: center" id="doctorInfoLine">Hello Doctor</h3>
+		</div>
+		<ul data-role="listview" data-inset="true">	
+		<li data-role="list-divider">Options</li>		
+		<li><a id="patientList"><h3>Patient List</h3>
+		<p>Display a list of current and previous patients associated with you</p></a></li>
+		<li><a href="#">...</a></li>
+		<li><a href="#">...</a></li>				
+		</ul>				
+	</div><!-- /content --> 
+	
+	<div data-role="content" id="doctorPatient">		
+		<h3 style="text-align: center">Active Patient List</h3>
+		<div id="docPatListShow"></div>
+	</div>
+
+	<div data-role="content" id="doctorPatientOld">		
+		<h3 style="text-align: center">Inactive Patient List</h3>
+		<div id="docPatListShowOld"></div>
+	</div>
+	
+ 
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

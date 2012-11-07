@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="newUser.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="newUser">
+
+	<div data-role="header">
+		<a href="#" data-rel="back" data-icon="back" data-direction="reverse" class="ui-btn-left jqm-home">Back</a>
+		<h1>User Form</h1>		
+		<!--<ul class="ui-grid-d" data-role="listview">
+		<li><a id="nbPerson">Personal</a></li>		
+		<li><a id="nbMedical">Medical</a></li>
+		<li><a id="nbEnvironment">Environmental</a></li>
+		<li><a id="nbFamily">Family</a></li>
+		<li><a id="nbMental">Mental</a></li>
+		<li><a id="nbMisc">Misc</a></li>
+		<li><a id="nbDone">Done</a></li>
+		</ul>		-->
+		
+		
+	<div data-role="navbar">
+		<ul>
+		<li><a id="nbPerson">Personal</a></li>		
+		<li><a id="nbMedical">Medical</a></li>
+		<li><a id="nbEnvironment">Environmental</a></li>
+		<li><a id="nbFamily">Family</a></li>
+		</ul></div>
+		<div data-role="navbar">
+		<ul>
+		<li><a id="nbMental">Social</a></li>
+		<li><a id="nbMisc">Misc</a></li>
+		<li><a id="nbDone">Done</a></li>
+		</ul>
+	</div><!-- /navbar -->
+
+	
+	</div><!-- /head -->
+
+	
+	<div data-role="content" id="perfPersonal">
+		<h3 align="center">Personal Question</h3>
+			<form id="perfPForm">
+				<div id="perfPDisplay"></div>
+			</form>
+	</div>
+	
+	<div data-role="content" id="medfPersonal">
+	<h3 align="center">Medical Question</h3>
+		<form id="medfPForm">
+			<div id="medfPDisplay"></div>
+		</form>
+	</div>
+	
+	<div data-role="content" id="envfPersonal">
+	<h3 align="center">Environmental Question</h3>
+		<form id="envfPForm">
+			<div id="envfPDisplay"></div>
+		</form>
+	</div>
+	
+	<div data-role="content" id="famfPersonal">
+	<h3 align="center">Family Question</h3>
+		<form id="famfPForm">
+			<div id="famfPDisplay"></div>
+		</form>
+	</div>
+	
+	<div data-role="content" id="menfPersonal">
+	<h3 align="center">Social Question</h3>
+		<form id="menfPForm">
+			<div id="menfPDisplay"></div>
+		</form>
+	</div>
+	
+	<div data-role="content" id="miscfPersonal">
+	<h3 align="center">Miscellaneous Question</h3>
+		<form id="miscfPForm">
+			<div id="miscfPDisplay"></div>
+		</form>
+	</div>
+	
+	<div data-role="content" id="newUserDone">
+	<h3 align="center">Review and Complete</h3>
+		<p>Please review your answers before sumbitting</p>
+		<div style="color:red;" id="nUDoneDisplay"></div>
+		<input type="button" value="Submit" id="doneSubmit"/>
+	</div>
+	
+	<div data-role="content" id="newUserFinish">
+	<h3 align="center">Finish</h3>
+		<div></div>
+	</div>
+
+
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 	
+
+
+</div><!-- page: new user -->
+
+</body>
+</html>

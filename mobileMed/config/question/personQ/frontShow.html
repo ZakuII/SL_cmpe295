@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  
+  <script src="frontShow.js"></script>
+  <script src="formEdit.js"></script>
+</head>
+
+<body>
+	
+<div data-role="page" data-add-back-btn="true" id="pqfrontShow">
+
+	<div data-role="header">
+		<h1>Personal Question</h1>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+		
+		<div id="frontShow">
+			<p>This is a test Page</p>
+			<p>Use this to interact with show.html</p>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup" data-type="horizontal" id="preQ-radio1">
+			   	<legend>Select ID:</legend>
+			       	<input type="radio" name="idChoice" id="idChoice1" value="1"   checked="checked"/>
+			       	<label for="idChoice1">1</label>
+
+			       	<input type="radio" name="idChoice" id="idChoice2" value="2"  />
+			       	<label for="idChoice2">2</label>
+
+		    </fieldset>
+			
+		</div>
+		
+		<input type="button" data-inline="true" value="Confirm" id="pqTestConfirm"/>
+		<input type="button" data-inline="true" value="View" id="pqTestSubmit"/>
+		
+	</div><!-- /content --> 
+ 
+ 
+ 	<div data-role="content">
+		
+		<div id="frontShow">
+			<p>This is a test Page</p>
+			<p>Use this to interact with Editing Form</p>
+		</div>		
+		
+		<input type="button" data-inline="true" value="Confirm" id="pqEditConfirm"/>
+		<input type="button" data-inline="true" value="View" id="pqEditSubmit"/>					
+		
+	</div><!-- /content --> 
+ 
+ 
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+	</div><!-- /page1 -->
+	
+
+</body>
+</html>

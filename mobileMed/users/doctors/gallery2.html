@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" rel="stylesheet" />
+	
+	<link href="photoswipe.css" type="text/css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="klass.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
+	<script type="text/javascript" src="code.photoswipe.jquery-3.0.4.min.js"></script>
+	
+	<script type="text/javascript">
+	
+		(function(window, $, PhotoSwipe)
+		{
+			$(document).ready(function()
+			{
+				$("#gallery a").photoSwipe(
+				{
+					enableMouseWheel: false,
+					enableKeyboard: false
+				});
+				
+				$("#gallery a:first").click();
+			});
+			
+			
+			
+		}(window, window.jQuery, window.Code.PhotoSwipe));
+	
+	</script>
+
+</head>
+
+<body>
+
+		<div id="gallery">
+		
+			<a href="images/full/001.jpg" rel="external"><img src="images/thumb/001.jpg" alt="Image 001" /></a>
+			<a href="images/full/002.jpg" rel="external"><img src="images/thumb/002.jpg" alt="Image 002" /></a>
+			<a href="images/full/003.jpg" rel="external"><img src="images/thumb/003.jpg" alt="Image 003" /></a>
+			<a href="images/full/004.jpg" rel="external"><img src="images/thumb/004.jpg" alt="Image 004" /></a>
+			<a href="images/full/005.jpg" rel="external"><img src="images/thumb/005.jpg" alt="Image 005" /></a>
+			<a href="images/full/006.jpg" rel="external"><img src="images/thumb/006.jpg" alt="Image 006" /></a>
+			<a href="images/full/007.jpg" rel="external"><img src="images/thumb/007.jpg" alt="Image 007" /></a>
+			<a href="images/full/008.jpg" rel="external"><img src="images/thumb/008.jpg" alt="Image 008" /></a>
+			<a href="images/full/009.jpg" rel="external"><img src="images/thumb/009.jpg" alt="Image 009" /></a>
+			
+		</div>
+
+</body>
+
+</html>

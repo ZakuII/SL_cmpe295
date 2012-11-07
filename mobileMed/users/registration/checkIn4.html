@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="checkIn2.js"></script>
+  
+</head>
+<body>
+
+<div data-role="page" id="ckInPatient4">
+
+	<div data-role="header">
+		<h1>Patient Check In</h1>
+	</div><!-- /head -->	
+
+	
+	<div data-role="content" id="ckInPatient3Page">
+		<h3 align="center">Reason for Visitation</h3>
+		
+		<div data-role="fieldcontain">
+			<label for="reason" id="reasonLabel"><strong>Reason:</strong></label>
+			<textarea name="reason" id="reason" value=""  /></textarea>
+		</div>
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="ckIn4Back" value="Back" data-inline="true"/> 
+			<input type="button" id="ckIn4Confirm" value="Confirm" data-inline="true"/> 	
+		</div>
+				
+	</div>	
+	
+
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 	
+
+
+</div><!-- page: new user -->
+
+</body>
+</html>

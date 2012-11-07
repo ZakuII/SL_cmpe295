@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">  	  
+  <meta http-equiv="cleartype" content="on">
+  <meta name="MobileOptimized" content="320" />
+  
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>  
+  <script src="patient.js"></script>
+  <script src="patient/contactDoc.js"></script>
+  <script src="patient/contact.js"></script>  
+  <script src="form/views/showInfo.js"></script>
+  <script src="patient/viewProc.js"></script>
+  
+  
+  <link rel="stylesheet" href="form/nav.css" />
+  <link rel="stylesheet" href="patient/message.css" />
+  <link rel="stylesheet" href="patient/viewProc.css" />
+  
+  
+</head>
+
+<body>
+
+<div data-role="page" id="Patient">
+
+
+	<div data-role="header">
+		<h1>Patient</h1>
+		<a id="logout" data-icon="gear" class="ui-btn-right">Log Out</a>
+	</div><!-- /head -->   
+	
+	<div data-role="content" id="PatientMain">
+		<div>		
+		<img style="display: block; margin-left: auto; margin-right: auto"  height="170" width="170" src="../assets/defaultpatient.jpg" />
+		<div style="text-align: center" id="PatientPageInfoLine">Hello Patient</div>
+		</div>
+		<ul data-role="listview" data-inset="true">	
+		<li data-role="list-divider">Options</li>		
+		<li><a id="patientInvo"><h3>Patient Information</h3><p>View My Medical Records</p></a></li>
+		<li><a id="patientVisitLog"><h3>View Visitation History</h3><p>View My Previous Vistations Records</p></a></li>
+		<li><a id="dpatientMedLog"><h3>View Prescription History</h3><p>View My Previous Prescription Records</p></a></li>
+		<li><a href="patient/contactDoc.html" data-transition="slide" data-prefetch><h3>Contact Doctor</h3><p>Message My Doctors</p></a></li>
+		<li><a href="patient/viewProc.html" data-prefetch><h3>View My Procedures / Tests Results</h3><p>View My Previous Procedure and Laboratory Test Records</p></a></li>
+		<!--<li><a href="#">...</a></li>
+		<li><a href="#">...</a></li>-->
+		</ul>				
+	</div><!-- /content --> 
+	
+	<div data-role="content" id="patientLog">		
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="patientLogBack" value="Back To Patient" data-inline="true"/> 
+		</div>
+		<h3 style="text-align: center">Visitation Log</h3>
+		<div id="patientLogShow"></div>
+	</div>
+	
+	<div data-role="content" id="dMXLog">		
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="dMXLogBack" value="Back To Patient" data-inline="true"/> 
+		</div>
+		<h3 style="text-align: center">Prescription Log</h3>
+		<div id="dMXLogShow"></div>
+	</div>	
+	
+ 
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

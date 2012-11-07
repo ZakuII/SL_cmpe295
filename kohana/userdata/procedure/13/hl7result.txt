@@ -1,0 +1,8 @@
+MSH|?~\&||SJSU CMPE295 Hospital Lab||SJSU CMPE295 Hospital|20120905233428||CSU?Z01||P|2.5.1
+PID|1|000000013|||||YYYYMMDD|M||||||||||000000013
+PV1|1|||||||||||||||||||||||||||||||||||||||||20120905233428|20120905233428
+OBX|1|NM|Comprehensive Blood Count (CBC)|RB Count|5.1|trillion cells/L|4.32 - 5.72||||F|||20120905233428|||||20120905233428
+OBX|2|NM|Comprehensive Blood Count (CBC)|Hemoglobin|15.1|grams/dL|13.5 - 17.5||||F|||20120905233428|||||20120905233428
+OBX|3|NM|Comprehensive Blood Count (CBC)|Hematocrit|35.1|%|38.8 - 50.0||||F|||20120905233428|||||20120905233428
+OBX|4|NM|Comprehensive Blood Count (CBC)|WBC Count|5.3|billion cells/L|3.5 - 10.5||||F|||20120905233428|||||20120905233428
+OBX|5|NM|Comprehensive Blood Count (CBC)|Platclet Count|253|billions/L|150 - 450||||F|||20120905233428|||||20120905233428

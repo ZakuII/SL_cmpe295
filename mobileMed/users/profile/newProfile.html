@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="newProfile.js"></script>
+  <script src="newDoctor.js"></script>
+  <script src="newUser.js"></script>
+  <script src="../log.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="newProfile">
+
+	<div data-role="header">
+		<h1>Configure New Profile</h1>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+	<h3 id="nperror"></h3>
+		<form id="newProfileForm">
+		<ul data-role="listview" data-divider-theme="d">
+			<li data-role="list-divider" style="text-align:center;">Account Information</li>
+			<li data-role="fieldcontain"><label for="username" id="usernamelabel"><strong>Desired User Name:</strong></label>
+				<input type="text" name="username" id="username" value=""  /></li>				
+			<li data-role="fieldcontain"><label for="password" id="passwordlabel"><strong>Desired Password:</strong></label>
+				<input type="password" name="password" id="password" value=""  /></li>				
+			<li data-role="fieldcontain"><label for="password2" id="password2label"><strong>Confirm Desired Password:</strong></label>
+				<input type="password" name="password2" id="password2" value=""  /></li>
+			
+			<li data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+			    	<legend><strong>Select Profile Type:</strong></legend>
+			         	<input type="radio" name="ProfileType" id="ProfileType1" value="patient" checked="checked"/>
+			         	<label for="ProfileType1">Patient</label>
+
+			         	<input type="radio" name="ProfileType" id="ProfileType2" value="doctor"  />
+			         	<label for="ProfileType2">Doctor</label>
+
+			         	<input type="radio" name="ProfileType" id="ProfileType3" value="nurse"  />
+			         	<label for="ProfileType3">Nurse</label>
+
+			    </fieldset>
+			</li>
+			<li data-role="list-divider" style="text-align:center;">Please designate a question and answer to be used to retrieve a lost password</li>
+			<li data-role="fieldcontain"><label for="question" id="questionlabel"><strong>Question:</strong></label>
+				<input type="text" name="question" id="question" value=""  /></li>
+			<li data-role="fieldcontain"><label for="answer" id="answerlabel"><strong>Answer:</strong></label>
+				<input type="text" name="answer" id="answer" value=""  /></li>
+			<li data-role="list-divider" style="text-align:center;">User Information</li>
+			<li data-role="fieldcontain"><label for="firstname" id="firstnamelabel"><strong>First Name:</strong></label>
+				<input type="text" name="firstname" id="firstname" value=""  /></li>
+			<li data-role="fieldcontain"><label for="lastname" id="lastnamelabel"><strong>Last Name:</strong></label>
+				<input type="text" name="lastname" id="lastname" value=""  /></li>
+			<li data-role="fieldcontain"><label for="email" id="emaillabel"><strong>Email:</strong></label>
+				<input type="email" name="email" id="email" value=""  /></li>
+			
+			<li>
+					<input type="button" id="nPSumbit" value="Submit" data-inline="true"/> 
+					<input type="button" id="nPCancel" value="Cancel" data-inline="true"/> 
+			</li>
+			
+		</ul>
+		</form>
+	</div><!-- /content --> 
+ 
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page --> 
+
+ 
+</body>
+</html>

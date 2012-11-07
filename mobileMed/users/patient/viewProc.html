@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Medical Application</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>	
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="viewProc.css" />	
+	<link href="../../assets/photoswipe.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../../assets/klass.min.js"></script>
+	<script type="text/javascript" src="../../assets/code.photoswipe.jquery-3.0.5.min.js"></script>	
+	<script src="viewProc.js"></script> 
+	
+
+</head> 
+
+<body> 
+
+	<div data-role="page" class="type-interior" id="procShow">
+
+		<div data-role="header" data-theme="a">		
+			<h1>Procedure / Test Evaluation</h1>
+			<a href="#" data-rel="back" data-icon="back" data-direction="reverse" class="ui-btn-left jqm-home">Back</a>
+		</div><!-- /header -->
+
+	<div data-role="content">
+		<div class="content-primary">
+			<div class="ProcArea">
+				<div id="procHead"></div>
+				<div id="procTable"><h4>Please Select a Procedure to View</h4></div>
+				<canvas id="pgraph" width="500" height="350">   </canvas>
+				<div id="gallery"></div>
+			</div>
+		</div><!--/content-primary -->		
+
+	<div class="content-secondary">
+		<div data-role="collapsible-set" data-theme="b">
+				<div class="colapse2" data-role="collapsible" data-collapsed="false">					
+					<h3>Screening Results</h3>				
+					<ul data-role="listview" data-theme="c" data-dividertheme="d">					
+						<li><a id="procCBC">Complete Blood Count (CBC)</a></li>
+						<li><a id="procFBS">Fasting Blood Sugar (FBS)</a></li>
+						<li><a id="procLBT">Lipid Blood Test</a></li>
+						<li><a id="procTBT">Thyroid Blood Test</a></li>
+						<li><a id="procCMP">Comprehensive Metabolic Panel (CMP)</a></li>
+						<li><a id="procOTHER">Other</a></li>
+					</ul>
+				</div>
+		</div>
+	</div><!-- /secondary -->
+
+	</div><!-- /content -->
+	
+	</div><!-- /page -->
+	
+	
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  
+  <!--<link rel="stylesheet" href="/mobileMed/assets/jquery.mobile-1.1.1.min.css" />
+  <script src="/mobileMed/assets/jquery-1.7.1.min.js"></script>
+  <script src="/mobileMed/assets/jquery.mobile-1.1.1.min.js"></script>-->
+  
+  <script src="permission.js"></script>
+  <script src="permissionEd.js"></script>
+  <script src="../log.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="ConfigPermission">
+
+
+	<div data-role="header">
+		<h1>Configure Permissions</h1>
+		<a id="logout" data-icon="gear" class="ui-btn-right">Log Out</a>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+	
+		<div id="permEdit_a">
+			<ul data-role="listview" data-inset="true">	
+				<li data-role="list-divider">New Permission</li>
+				<li><a href="newPermission.html">Create New Permission</a></li>
+			</ul>
+		</div>	
+	
+		<div id="permEdit_b"></div>
+		
+		<div>
+			<ul data-role="listview" data-inset="true">	
+				<li data-role="list-divider">Options</li>		
+				<li><a href="../front.html">Return to Admin Home</a></li>
+			</ul>
+		</div>
+	
+	</div><!-- /content --> 
+ 
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

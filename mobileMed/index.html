@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">  	  
+  <meta http-equiv="cleartype" content="on">
+  <meta name="MobileOptimized" content="320" />
+  
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="mobileMedical.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="MobileMed">
+
+
+	<div data-role="header">
+		<h1>Mobile Medical Application</h1>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+		<h3 align="center">Mobile Medical Application</h3>
+		<img style="display: block; margin-left: auto; margin-right: auto" src="assets/medical.png" />
+		<form id="login">
+		<ul data-role="listview" data-inset="true">	
+		
+			<li data-role="list-divider">Please Log In</li>
+			<li data-role="fieldcontain">
+				<label for="logUN" id="logUNLabel"><strong>User Name</strong></label>
+				<input type="text" name="logUN" id="logUN" value=""  />
+			</li>
+			<li data-role="fieldcontain">
+				<label for="logPW" id="logPWLabel"><strong>Password</strong></label>
+				<input type="password" name="logPW" id="logPW" value=""  />
+			</li>
+			
+			<li data-role="controlgroup" data-type="horizontal">
+				<input type="reset" value="Clear" data-inline="true"/>
+				<input type="button" id="logSubmit" value="Submit" data-inline="true"/> 
+			</li>
+			
+		
+		</ul>
+		</form>
+		
+	</div><!-- /content -->  
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

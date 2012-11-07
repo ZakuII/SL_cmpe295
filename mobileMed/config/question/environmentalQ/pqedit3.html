@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  
+  <script src="pqedit3.js"></script>
+</head>
+
+<body>
+	
+<div data-role="page" data-add-back-btn="true" id="PQedit3">
+
+	<div data-role="header">
+		<h1>Edit Environmental Questions</h1>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+		<p style="color:red;" id="pqPrevAuth_e3"></p>
+	</div><!-- /content --> 
+ 	
+	<!-- Question --> 
+	<div id="pqedit3_1" data-role="content">
+		
+		<div data-role="fieldcontain">
+			<label for="pqedit3_1_Q">Question:</label>
+			<textarea name="pqedit3_1_Q" id="pqedit3_1_Q" value="" placeholder="Enter Question here"></textarea>
+		</div>	
+		
+	<!--		
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup" id="pqedit3_1_R">
+			   	<legend>Select type of field:</legend>
+			       	<input type="radio" name="pqedit3_1_RC" id="pqedit3_1_RC1" value="text"   checked="checked"/>
+			       	<label for="pqedit3_1_RC1">Text</label>
+
+			       	<input type="radio" name="pqedit3_1_RC" id="pqedit3_1_RC2" value="radio"  />
+			       	<label for="pqedit3_1_RC2">Radio Buttons</label>
+
+					<input type="radio" name="pqedit3_1_RC" id="pqedit3_1_RC3" value="checkbox"  />
+		         	<label for="pqedit3_1_RC3">Checked Boxes</label>
+
+		         	<input type="radio" name="pqedit3_1_RC" id="pqedit3_1_RC4" value="menu"  />
+		         	<label for="pqedit3_1_RC4">Menu</label>
+					
+					<input type="radio" name="pqedit3_1_RC" id="pqedit3_1_RC5" value="toggle"  />
+		         	<label for="pqedit3_1_RC5">Toggle</label>
+		    </fieldset>			
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="pqedit3_1_numFields" >Number of fields to use:</label>
+			<select name="pqedit3_1_numFields" id="pqedit3_1_numFields" data-native-menu="false">
+			    <option value="0">Select Number</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+		</div>
+		
+		<div id=pqedit3_1_more></div>-->
+		
+	</div>
+	
+	
+	<!-- ALL --> 
+	<div id="pqedit3_2" data-role="content">
+		
+		<form>
+		<div data-role="fieldcontain">
+			<label for="pqedit3_2_Q">Question:</label>
+			<textarea name="pqedit3_2_Q" id="pqedit3_2_Q" value="" placeholder="Enter Question here"></textarea>
+		</div>	
+		
+		
+		<div data-role="fieldcontain">
+			<fieldset data-role="controlgroup" id="pqedit3_2_R">
+			   	<legend>Select type of field:</legend>
+			       	<input type="radio" name="pqedit3_2_RC" id="pqedit3_2_RC1" value="text"   checked="checked"/>
+			       	<label for="pqedit3_2_RC1">Text</label>
+
+			       	<input type="radio" name="pqedit3_2_RC" id="pqedit3_2_RC2" value="radio"  />
+			       	<label for="pqedit3_2_RC2">Radio Buttons</label>
+
+					<input type="radio" name="pqedit3_2_RC" id="pqedit3_2_RC3" value="checkbox"  />
+		         	<label for="pqedit3_2_RC3">Checked Boxes</label>
+
+		         	<input type="radio" name="pqedit3_2_RC" id="pqedit3_2_RC4" value="menu"  />
+		         	<label for="pqedit3_2_RC4">Menu</label>
+					
+					<input type="radio" name="pqedit3_2_RC" id="pqedit3_2_RC5" value="toggle"  />
+		         	<label for="pqedit3_2_RC5">Toggle</label>
+		    </fieldset>			
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="pqedit3_2_numFields" >Number of fields to use:</label>
+			<select name="pqedit3_2_numFields" id="pqedit3_2_numFields" data-native-menu="false">
+			    <option value="0">Select Number</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+		</div>
+		
+		<div id=pqedit3_2_more></div>
+		
+		<input type="reset" data-inline="true" value="Clear"/>
+		</form>
+		
+	</div>
+	
+	<div data-role="content">
+	<input type="button" data-inline="true" value="Back" id="pqEditBack3"/>
+	<input type="button" data-inline="true" value="Preview" id="pqEditPrev3"/>
+	</div>
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+	</div><!-- /page1 -->
+	
+
+</body>
+</html>

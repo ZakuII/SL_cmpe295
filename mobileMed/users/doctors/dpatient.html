@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>-->
+  
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>	
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+  
+  <link href="../../assets/photoswipe.css" type="text/css" rel="stylesheet" />
+  <script type="text/javascript" src="../../assets/klass.min.js"></script>
+  <script type="text/javascript" src="../../assets/code.photoswipe.jquery-3.0.5.min.js"></script>
+  
+  <script src="../doctor.js"></script>
+  <script src="Dpatient.js"></script>
+  <script src="../form/views/show2.js"></script>
+  <link rel="stylesheet" href="../form/nav.css" />
+  
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=true&libraries=places"></script>  
+  <script src="perscription.js"></script>
+  <link rel="stylesheet" href="perscription.css" />
+  
+  <script src="contact.js"></script>
+  <link rel="stylesheet" href="message.css" />
+  
+  <script src="scheduleProc.js"></script> 
+  
+  <link rel="stylesheet" href="viewProc.css" />
+  <script src="viewProc.js"></script> 
+  
+</head>
+
+<body>
+
+<div data-role="page" id="dpatient">
+
+
+	<div data-role="header">
+		<h1>Patient Information</h1>
+		<a id="logout" data-icon="gear" class="ui-btn-right">Log Out</a>
+	</div><!-- /head -->   
+  
+	<div data-role="content" id="dpatientMain">
+		<div>				
+		<img style="display: block; margin-left: auto; margin-right: auto"  height="170" width="170" src="../../assets/defaultpatient.jpg" />		
+		<div style="text-align: center" id="PatientInfoLine">Patient</div>
+		</div>
+		<ul data-role="listview" data-inset="true">	
+		<li data-role="list-divider">Options</li>		
+		<li><a id="dpatientInfo"><h3>Patient Information</h3><p>View patient's records</p></a></li>
+		<li><a id="dpatientVisitLog"><h3>View Visitation History</h3><p>View previous vistations records</p></a></li>
+		<li><a href="perscription.html" data-prefetch><h3>Make Prescription</h3><p>Create / Renew a prescription</p></a></li>
+		<li><a id="dpatientMedLog"><h3>View Prescription History</h3><p>View previous prescriptions records</p></a></li>
+		<li><a href="schedulePro.html" data-prefetch><h3>Schedule Procedure / Test</h3><p>Schedule an outgoing procedure or laboratory test </p></a></li>
+		<li><a href="viewProc.html" data-prefetch><h3>View Procedures / Tests</h3><p>View previous procedure and laboratory test records</p></a></li>
+		<!--<li><a href="#">...</a></li>-->
+		<li><a id="Dcontact"><h3>Contact Patient</h3><p>Message patient</p> <span class="ui-li-count" id="upCount">0</span></a></li>
+		</ul>				
+	</div><!-- /content --> 	 
+	
+	<div data-role="content" id="dpatientLog">		
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="dpatientLogBack" value="Back To Patient" data-inline="true"/> 
+		</div>
+		<h3 style="text-align: center">Visitation Log</h3>
+		<div id="dpatientLogShow"></div>
+	</div>
+
+	<div data-role="content" id="dMXLog">		
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="dMXLogBack" value="Back To Patient" data-inline="true"/> 
+		</div>
+		<h3 style="text-align: center">Prescription Log</h3>
+		<div id="dMXLogShow"></div>
+	</div>		
+	
+	<div data-role="content" id="dpatientBottom">
+		<div data-role="controlgroup" data-type="horizontal">
+			<!--<input type="button" id="doctorPatientBack" value="Back" data-inline="true"/> -->
+			<a href="../doctor.html" data-role="button">Back To Doctor Home</a> 
+		</div>
+	</div>
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="log.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="Configure">
+
+
+	<div data-role="header">
+		<h1>Configuration</h1>
+		<a id="logout" data-icon="gear" class="ui-btn-right">Log Out</a>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+	
+		<div>		
+		<img style="display: block;  margin-left: auto; margin-right:auto" height="170" width="170" src="../assets/exec.jpg" />
+		<h3 style="text-align: center" id="adminInfoLine">Configuration / Administrator</h3>
+		</div>
+	
+		
+		<ul data-role="listview" data-inset="true">	
+		<li data-role="list-divider">Options</li>
+		
+		<li><a href="question.html"><h3>Questions</h3><p>View / Edit Medical Record Questions</p></a></li>
+		<li><a href="control/permission.html" rel="external"><h3>Permissions</h3><p>View / Edit Doctor Specialization and Permissions</p></a></li>
+		<!--<li><a href="#">...</a></li>
+		<li><a href="#">...</a></li>-->
+		
+		</ul>
+		
+		
+	</div><!-- /content --> 
+ 
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

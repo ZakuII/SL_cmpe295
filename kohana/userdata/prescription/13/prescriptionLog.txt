@@ -1,0 +1,49 @@
+[Created] : Thu, 23 Aug 2012 23:35:52 +0000
+[Reason] : Injury to head
+[Hospital] : SJSU CMPE295 Hospital, id = 818289483
+[Pharmacy] : CVS/pharmacy
+[Pharmacy Location] : 2514 Berryessa Road, San Jose, CA, United States
+[Perscription] : Tramadol, Amount = 40
+[Direction] : Take 1 Every 4 Hours for 10 days
+[Additional Direction] : Take with Water
+[Refills] : 1
+[Prescribed by] : Dr. Joe Appleseed
+[Created] : Wed, 05 Sep 2012 21:58:31 +0000
+[Reason] : Strange pain in lower leg
+[Hospital] : SJSU CMPE295 Hospital, id = 818289483
+[Pharmacy] : Costco
+[Pharmacy Location] : 1709 Automation Parkway, San Jose, CA, United States
+[Perscription] : Tramadol, Amount = 80
+[Direction] : Take 2 Every 4 Hours for 10 days
+[Additional Direction] : Take with water, before eating
+[Refills] : 0
+[Prescribed by] : Dr. Joe Appleseed
+
+-------------------------------------------
+
+[Created] : Wed, 05 Sep 2012 21:59:56 +0000
+[Reason] : Strange pain in lower leg
+[Hospital] : SJSU CMPE295 Hospital, id = 818289483
+[Pharmacy] : CVS/pharmacy
+[Pharmacy Location] : 2514 Berryessa Road, San Jose, CA, United States
+[Perscription] : Percocet, Amount = 7
+[Direction] : Take 1 Every 12 Hours for 7 days
+[Additional Direction] : Take only when needed
+[Refills] : 1
+[Prescribed by] : Dr. Joe Appleseed
+
+-------------------------------------------
+
+[Created] : Wed, 10 Oct 2012 23:47:36 +0000
+[Reason] : Strange pain in lower leg
+[Hospital] : SJSU CMPE295 Hospital, id = 818289483
+[Pharmacy] : Costco
+[Pharmacy Location] : 1709 Automation Parkway, San Jose, CA, United States
+[Perscription] : Hydrocodone, Amount = 10
+[Direction] : Take 1 Every 24 Hours for 10 days
+[Additional Direction] : Take After Eating
+[Refills] : 0
+[Prescribed by] : Dr. Joe Appleseed
+
+-------------------------------------------
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="log.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="ConfigQuestion">
+
+
+	<div data-role="header">
+		<h1>Configure Questions</h1>
+		<a id="logout" data-icon="gear" class="ui-btn-right">Log Out</a>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+		
+		<h3 align="center">View / Edit Medical Records Questions</h3>
+		
+		<ul data-role="listview" data-inset="true">	
+		<li data-role="list-divider">Question Categories</li>
+		
+		<li><a href="question/personQ/PQedit.html" rel="external"><h3>Personal Questions</h3><p>View / Edit Medical Record Questions Regarding Patients' Personal Information</p></a></li>
+		<li><a href="question/medicalQ/PQedit.html" rel="external"><h3>Medical Questions</h3><p>View / Edit Medical Record Questions Regarding Patients' Medical History</p></a></li>
+		<li><a href="question/socialQ/PQedit.html" rel="external"><h3>Social Questions</h3><p>View / Edit Medical Record Questions Regarding the Patients' Social Surrounding</p></a></li>
+		<li><a href="question/environmentalQ/PQedit.html" rel="external"><h3>Environmental Questions</h3><p>View / Edit Medical Record Questions Regarding the Patients' Environment</p></a></li>
+		<li><a href="question/familyQ/PQedit.html" rel="external"><h3>Family Questions</h3><p>View / Edit Medical Record Questions Regarding the Patients' Family</p></a></li>
+		<li><a href="question/miscQ/PQedit.html" rel="external"><h3>Miscellaneous Questions</h3><p>View / Edit Medical Record Questions Regarding Other Miscellaneous Information</p></a></li>
+		
+		</ul>
+		
+		
+		<ul data-role="listview" data-inset="true">	
+			<li data-role="list-divider">Options</li>
+			<li><a href="front.html">Return to Admin Home</a></li>
+		</ul>
+		
+		
+		
+	</div><!-- /content --> 
+ 
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

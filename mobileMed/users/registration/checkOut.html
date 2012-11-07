@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="checkOut.js"></script>
+  <script src="../log.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="ckOutPatient">
+
+	<div data-role="header">
+		<h1>Patient Check Out</h1>
+	</div><!-- /head -->
+
+	<div data-role="content" id="ckOutTab">
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="ckOutSearch" value="Search" data-inline="true"/> 
+			<input type="button" id="ckOutList" value="List All" data-inline="true"/> 			
+		</div>
+	</div>
+	
+	
+	<div data-role="content" id="ckOSearch">
+		<h3 align="center">Patient Check Out</h3>
+		<p><em><strong>Please Supply at least <u>ONE</u> of the following fields</strong></em></p>
+		<form id="ckInPatientForm">
+			<div data-role="fieldcontain">
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" value=""/>
+				<label for="firstname">First Name:</label>
+				<input type="text" name="firstname" id="firstname" value=""/>
+				<label for="lastname">Last Name:</label>
+				<input type="text" name="lastname" id="lastname" value=""/>
+			</div>
+			<input type="button" id="ePSearch" value="Search" data-inline="true"/> 
+			<input type="button" id="ePCancel" value="Cancel" data-inline="true"/> 
+		</form>
+		</br>
+		<div id="editPDisplay"></div>	
+	</div>
+
+	<div data-role="content" id="ckOlist">
+		<h3 align="center">List All Patients Checked In</h3>
+		<div id="ckOutlistPage"></div>
+	</div>
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 	
+
+
+</div><!-- page: new user -->
+
+</body>
+</html>

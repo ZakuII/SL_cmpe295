@@ -1,0 +1,25 @@
+#map_canvas{
+display:block; 
+text-align: center; 
+margin-left: auto; 
+margin-right: auto;
+height:auto;
+width:90%;
+min-height:250px;
+max-height:1600px;
+overflow:hidden;
+display:block;
+}
+
+.ui-autocomplete {
+		max-height: 100px;
+		overflow-y: auto;
+		/* prevent horizontal scrollbar */
+		overflow-x: hidden;
+		/* add padding to account for vertical scrollbar */
+		padding-right: 20px;
+	}
+
+	* html .ui-autocomplete {
+		height: 100px;
+	}

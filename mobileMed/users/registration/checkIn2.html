@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="checkIn2.js"></script>
+  <script src="../jqmAuto.js"></script>
+  
+</head>
+<body>
+
+<div data-role="page" id="ckInPatient2">
+
+	<div data-role="header">
+		<h1>Patient Check In</h1>
+				
+		<div data-role="navbar">
+		<ul>
+			<li><a id="ckInNew">Assign New Doctor</a></li>
+			<li><a id="ckInOld">Assign Previous Doctor</a></li>
+		</ul>
+		</div>
+	</div><!-- /head -->
+	
+	<div data-role="content" id="ckInTab">
+		<div data-role="controlgroup" data-type="horizontal">
+			<input type="button" id="ckInSearch" value="Search" data-inline="true"/> 
+			<input type="button" id="ckInList" value="List All" data-inline="true"/> 			
+		</div>
+	</div>
+
+	
+	<div data-role="content" id="ckInNewPage">
+		<h3 align="center">Search for Doctor</h3>
+		<p>
+			<input type="text" id="searchFieldNew" placeholder="Enter Doctor Name">
+			<ul id="suggestionsNew" data-role="listview" data-inset="true"></ul>
+		</p>
+	</div>
+	
+	<div data-role="content" id="ckInNewPage2">
+		<h3 align="center">List All Doctors</h3>
+		<div id="ckInNewPage2Show"></div>
+	</div>
+	
+	<div data-role="content" id="ckInOldPage">
+		<h3 align="center">Find Old Doctor</h3>
+		<div id="ckInOldShow"></div>
+	</div>
+	
+	<div data-role="content">
+		<a href="checkIn.html" data-inline="true" data-role="button">Back</a> 
+	</div>
+	
+
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 	
+
+
+</div><!-- page: new user -->
+
+</body>
+</html>

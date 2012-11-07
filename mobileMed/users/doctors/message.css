@@ -1,0 +1,32 @@
+div.messageDocP{
+
+background-color:#C2F79E;
+width:70%;
+margin-right: 27%;
+margin-left: 3%; 
+padding:10px 10px;
+margin-top:8px;
+margin-bottom:8px;
+
+border-radius: 15px; 
+-moz-border-radius: 15px; 
+-webkit-border-radius: 15px; 
+border: 1px solid #0F0000;
+
+}
+
+div.messageDocD{
+background-color:#D0F5E4;
+width:70%;
+margin-right: 3%;
+margin-left: 27%; 
+padding:10px 10px;
+margin-top:8px;
+margin-bottom:8px;
+
+border-radius: 15px; 
+-moz-border-radius: 15px; 
+-webkit-border-radius: 15px; 
+border: 1px solid #0F0000; 
+
+}

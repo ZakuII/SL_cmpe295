@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="test.js"></script>
+</head>
+
+<body>
+	
+<div data-role="page" data-add-back-btn="true" id="PQedit2">
+
+	<div data-role="header">
+		<h1>Edit Personal Questions</h1>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+	
+	<!--<form id="pqform">
+		<ul data-role="listview">
+			<p id="pqDisplay">
+			<li>
+			<h4>Name</h4>
+			<span data-role="fieldcontain">
+			<label for="pq_1_0">Last</label>
+			<input type="text" name="pq_1_0" id="pq_1_0" value=""/>
+			<label for="pq_1_1">First</label>
+			<input type="text" name="pq_1_1" id="pq_1_1" value=""/>
+			<label for="pq_1_2">Middle</label>
+			<input type="text" name="pq_1_2" id="pq_1_2" value=""/>
+			</span>
+			</li>			
+			</p>
+		</ul>
+	</form>-->
+	
+	<form id="pqform">			
+				<div id="pqDisplay"></div>
+				<input type="button" data-inline="true" value="Confirm" id="pqDisBtnConfirm"/>
+				<input type="button" data-inline="true" value="Submit" id="pqDisBtnSubmit"/>
+	</form>
+	
+	<ul data-role="listview">	
+		<li>
+		<input type="button" data-inline="true" value="Back" id="pqEditBack2"/>
+		<input type="button" data-inline="true" value="Save" id="pqEditSave2"/>
+		<input type="button" data-inline="true" value="Test" id="pqEditTest2"/>
+		</li>
+	</ul>
+	
+	</div><!-- /content --> 
+ 	
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+	</div><!-- /page1 -->
+	
+
+</body>
+</html>

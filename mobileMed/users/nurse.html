@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">  	  
+  <meta http-equiv="cleartype" content="on">
+  <meta name="MobileOptimized" content="320" />
+  
+  
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  <script src="log.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="nurse">
+
+
+	<div data-role="header">
+		<h1>Nurse</h1>
+		<a id="logout" data-icon="gear" class="ui-btn-right">Log Out</a>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+		
+		<div>		
+		<img style="display: block; margin-left: auto; margin-right: auto" src="../assets/defaultnurse.png" />
+		<h3 style="text-align: center" id="NurseInfoLine">Hello Nurse</h3>
+		</div>
+		
+		<ul data-role="listview" data-inset="true">	
+		<li data-role="list-divider">Options</li>
+		
+		<li><a href="registration/checkIn.html" rel="external"><h2>Check In</h2><p>Check-In the Patient</p></a></li>
+		<li><a href="registration/checkOut.html" rel="external"><h2>Check Out</h2><p>Check-Out the Patient</p></a></li>
+		<li><a href="profile/newProfile.html" rel="external"><h2>New Profile</h2><p>Create a New User Profile</p></a></li>
+		<li><a href="profile/editPatient.html" rel="external"><h2>Edit Patient</h2><p>Edit an Existing User Profile</p></a></li>
+		<!--<li><a href="#">...</a></li>
+		<li><a href="#">...</a></li>-->
+		
+		</ul>
+		
+		
+	</div><!-- /content --> 
+ 
+	
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div><!-- /footer --> 
+ 
+</div><!-- /page1 --> 
+
+</body>
+</html>

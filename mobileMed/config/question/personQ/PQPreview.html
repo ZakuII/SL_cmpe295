@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Medical Application</title>
+  <!--
+  <link rel="stylesheet" href="/mobileMed/assets/jquery.mobile-1.1.1.min.css" />
+  <script src="/mobileMed/assets/jquery-1.7.1.min.js"></script>
+  <script src="/mobileMed/assets/jquery.mobile-1.1.1.min.js"></script>
+  -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+  
+  <script src="configPerson.js"></script>
+</head>
+
+<body>
+
+<div data-role="dialog" data-add-back-btn="true" id="PersonQuestionPreview">
+
+	<div data-role="header">
+		<h1>Personal Question Configuration Preview</h1>
+	</div><!-- /head -->   
+  
+	<div data-role="content">
+		
+		<div id="pqlog"></div>
+		<form id="pqPreview">
+		<div id="pqRender"></div>
+		<a href="newQuestion.html" data-role="button" data-inline="true" value="Back" id="pqBtnBack">Back</a>
+		<input type="button" data-inline="true" value="Confirm" id="pqBtnConfirm"/>
+		<input type="button" data-inline="true" value="Form Test" id="pqPrevTest"/>
+		
+		</form>
+		
+	</div><!-- /content --> 
+ 
+	<!--
+	<div data-role="footer">
+		<h5>Footer</h5>
+	</div> /footer --> 
+ 
+</div><!-- /page2 --> 
+
+</body>
+</html>

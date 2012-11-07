@@ -1,0 +1,12 @@
+[Created] : Thu, 30 Aug 2012 00:07:01 +0000
+[Reason] : Injury to toe
+[Hospital] : SJSU CMPE295 Hospital, id = 818289483
+[Procedure Insitute] : SJSU CMPE295 Hospital Lab
+[Procedure Location] : One Washington Square, San Jose, CA 95192
+[Procedure Location ID] : 818289555
+[Procedure] : Complete Blood Count (CBC)
+[Additional Direction] : None
+[Scheduled by] : Dr. Joe Appleseed, Pediatrician[id] : 000000014
+
+-------------------------------------------
+
